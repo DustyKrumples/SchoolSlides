@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.IO.Pipes;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int w = 7;
+            int h = 6;
+            int priceCarpet = 17;
+            int priceUnderlay = 3;
+            int price = CartpetCost(w,h,priceCarpet,priceUnderlay);
+            Console.WriteLine(price);
+
+            Console.ReadKey();
+        }
+        public static int CartpetCost(int w, int h, int priceCarpet, int underlay)
+        {
+            int size = w * h;
+            return (size * priceCarpet) + (size * underlay) + (h * 2 + w * 2) + 50;
+        }
+    }
+}
