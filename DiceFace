@@ -11,9 +11,11 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Prints a dice face on the number 5
             Output5();
             Console.ReadKey();
         }
+        //Prints the dice face
         public static void Output5()
         {
             Console.WriteLine("ooooooooooo");
