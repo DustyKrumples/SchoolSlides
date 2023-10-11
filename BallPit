@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.IO.Pipes;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double radPit = 1;
+            double heightPit = 0.2;
+            double radBall = 0.05;
+            double volBall = VolBall(radBall);
+            double volPit = VolPit(radPit, heightPit);
+            Console.WriteLine(volPit/volBall);
+            Console.ReadKey();
+        }
+        public static double VolPit(double radPit, double heightPit)
+        {
+            return 3.14*(radPit*radPit) * heightPit;
+        }
+        public static double VolBall(double radBall)
+        {
+            return (4/3)*3.14*(radBall*radBall*radBall);
+        }
+    }
+}
