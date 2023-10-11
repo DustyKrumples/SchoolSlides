@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.IO.Pipes;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int actualSize = 80;
+            int slideSize = 4;
+            Console.WriteLine(MagnificationCalc(actualSize, slideSize));
+            Console.ReadKey();
+        }
+        public static double MagnificationCalc(int actualSize, int slideSize)
+        {
+            return (slideSize * 10000) / actualSize;
+        }
+    }
+}
