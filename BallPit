@@ -12,6 +12,7 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Calculates  how many balls fit in a ballpit
             double radPit = 1;
             double heightPit = 0.2;
             double radBall = 0.05;
@@ -20,10 +21,12 @@ namespace SchoolSlides
             Console.WriteLine(volPit/volBall);
             Console.ReadKey();
         }
+        // Finds the volume of the Pit
         public static double VolPit(double radPit, double heightPit)
         {
             return 3.14*(radPit*radPit) * heightPit;
         }
+        //Finds the volume of each ball.
         public static double VolBall(double radBall)
         {
             return (4/3)*3.14*(radBall*radBall*radBall);
