@@ -12,7 +12,7 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
-            //Calculates the price to fit a carpet
+            //Calculates the price to fit a carpet.
             int w = 7;
             int h = 6;
             int priceCarpet = 17;
