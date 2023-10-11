@@ -12,6 +12,7 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Calculates the price to fit a carpet
             int w = 7;
             int h = 6;
             int priceCarpet = 17;
@@ -21,6 +22,7 @@ namespace SchoolSlides
 
             Console.ReadKey();
         }
+        //Does the calculation to return total price
         public static int CartpetCost(int w, int h, int priceCarpet, int underlay)
         {
             int size = w * h;
