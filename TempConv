@@ -11,15 +11,18 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Converts degrees C to degrees F and vice versa
             double C = 30;
             double F = CtoF(C);
             Console.WriteLine(C + " degrees C is " + F + " degrees F ");
             Console.ReadKey();
         }
+        //converts C to F
         static double CtoF(double C)
         {
             return (C * 1.8) + 32;
         }
+        //converts F to C
         static double FtoC(double F)
         {
             return (F - 32) / 1.8;
