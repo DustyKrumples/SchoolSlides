@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.IO.Pipes;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double diameter = 5;
+            double arcAngle = 3;
+            CircleCalc(diameter, arcAngle);
+
+            Console.ReadKey();
+        }
+        public static void CircleCalc(double diameter, double arcAngle)
+        {
+            double radius = diameter / 2;
+            double area = 3.14 * (radius * radius);
+            double circum = 3.14 * diameter;
+            double arcLength = (circum * arcAngle) / 360;
+
+            Console.WriteLine($"Radius: {radius}\nArea: {area}\nCircumference: {circum}\nArc Length: {arcLength}");
+        }
+        
+    }
+}
