@@ -11,6 +11,7 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Outputss the digits, characters, and alphanumerics
             Console.WriteLine("The digits are: 0123456789");
             Console.WriteLine("The characters are: abcdABCD@#!£");
             Console.WriteLine("The alphanumerics are: 0123456789 abcdABCD@#!£");
