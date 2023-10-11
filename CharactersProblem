@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The digits are: 0123456789");
+            Console.WriteLine("The characters are: abcdABCD@#!£");
+            Console.WriteLine("The alphanumerics are: 0123456789 abcdABCD@#!£");
+            
+            Console.ReadKey();
+        }
+        
+    }
+}
