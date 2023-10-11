@@ -12,6 +12,7 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Calculates the cost of energy bill
             double prevReading = 5;
             double currentReading = 10;
             double calorificVal = 39.3;
@@ -21,6 +22,7 @@ namespace SchoolSlides
 
             Console.ReadKey();
         }
+        //calculates kWH
         public static double EnergyBillCalc(double prevReading, double currentReading, double calorificVal)
         {
             double unitsUsed = currentReading - prevReading;
