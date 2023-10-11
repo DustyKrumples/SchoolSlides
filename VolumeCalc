@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int w = 10;
+            int h = 10;
+            int l = 10;
+            double ans = Volume(w, h, l);
+            Console.WriteLine(ans+"m^3");
+            Console.ReadKey();
+        }
+        public static double Volume(int w, int h, int l)
+        {
+            return (w * h * l) / 1000;
+        }
+    }
+}
