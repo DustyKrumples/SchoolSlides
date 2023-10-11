@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SchoolSlides
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double C = 30;
+            double F = CtoF(C);
+            Console.WriteLine(C + " degrees C is " + F + " degrees F ");
+            Console.ReadKey();
+        }
+        static double CtoF(double C)
+        {
+            return (C * 1.8) + 32;
+        }
+        static double FtoC(double F)
+        {
+            return (F - 32) / 1.8;
+        }
+    }
+}
