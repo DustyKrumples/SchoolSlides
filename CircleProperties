@@ -12,12 +12,14 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //Calculates all different measurements on a circle
             double diameter = 5;
             double arcAngle = 3;
             CircleCalc(diameter, arcAngle);
 
             Console.ReadKey();
         }
+        //calculates each of the measurements and outputs them
         public static void CircleCalc(double diameter, double arcAngle)
         {
             double radius = diameter / 2;
