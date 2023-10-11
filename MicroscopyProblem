@@ -12,11 +12,13 @@ namespace SchoolSlides
     {
         static void Main(string[] args)
         {
+            //calculates the magnification given actual size and size of the slide
             int actualSize = 80;
             int slideSize = 4;
             Console.WriteLine(MagnificationCalc(actualSize, slideSize));
             Console.ReadKey();
         }
+        //calculates the magnification
         public static double MagnificationCalc(int actualSize, int slideSize)
         {
             return (slideSize * 10000) / actualSize;
